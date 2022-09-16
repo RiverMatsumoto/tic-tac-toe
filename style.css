@@ -1,0 +1,74 @@
+body {
+  background-color: skyblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title-name {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 0;
+}
+
+#output {
+  font-size: 60px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  /* visibility: visible; */
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.parent {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  justify-content: center;
+}
+
+.square {
+  padding: 10px;
+  background-color: #efcb68;
+  color: black;
+  display: grid;
+  place-items: center;
+  font-family: monospace;
+  font-size: 1em;
+  font-weight: 1000;
+  transition: all 0.2s;
+}
+
+.square.anim {
+  font-size: 10em;
+}
+
+.square:hover {
+    cursor: pointer;
+}
+
+.button.reset {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 11em;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  font-weight: 1000;
+  background-color: rgb(255, 174, 0);
+  border-radius: 20px;
+  border-color: rgb(42, 42, 42);
+  transition: 0.1s;
+}
+
+.button:hover {
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: rgb(202, 138, 0);
+  border-color: rgb(0, 0, 0);
+}
